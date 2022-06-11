@@ -22,6 +22,10 @@ public class RegistrationPage {
     @FindBy(how= How.XPATH, using=".//p[text()='Некорректный пароль']")
     private SelenideElement messageNotCorrectPassword;
 
+    //Locator for LogIn Link in Registration Page
+    @FindBy(how= How.XPATH, using=".//a[@class='Auth_link__1fOlj']")
+    private SelenideElement logInLinkFromRegistrationPAge;
+
 
 
     //Method for insertName
@@ -43,6 +47,11 @@ public class RegistrationPage {
     //Method for click Registration Button
     public void clickRegistrationButton(){
         registrationButton.click();
+    }
+
+    //Method for click LogIn Link in Registration Page
+    public void clickLogInLinkFromRegistrationPage(){
+        logInLinkFromRegistrationPAge.click();
     }
 
     public List<SelenideElement> getInputs() {
