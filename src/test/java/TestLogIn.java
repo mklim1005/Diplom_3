@@ -19,7 +19,7 @@ public class TestLogIn {
     public String password;
 
     @Before
-    public void maxWindowSize() {
+    public void maxWindowSizeAndRegister() {
         Configuration.startMaximized = true;
 
         name = RandomStringUtils.randomAlphabetic(10);
@@ -40,7 +40,7 @@ public class TestLogIn {
     }
 
     @After
-    public void logOut() {
+    public void closeWebDriver() {
         Selenide.closeWebDriver();
     }
 
