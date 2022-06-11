@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.page;
 
-public class TestPersonalAccount {
+public class TestPersonalAccountLink {
 
     @Before
     public void maxWindowSize() {

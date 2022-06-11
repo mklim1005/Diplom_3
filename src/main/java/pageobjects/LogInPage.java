@@ -31,6 +31,10 @@ public class LogInPage {
     @FindBy(how= How.XPATH, using=".//button[text()='Выход']")
     private SelenideElement logOut;
 
+    //Locator for Constructor
+    @FindBy(how= How.XPATH, using=".//p[text()='Конструктор']")
+    private SelenideElement constructorLink;
+
 
     //Method for click register link
     public void clickRegister(){
@@ -60,6 +64,10 @@ public class LogInPage {
     //Click LogOut
     public void clickLogOut(){
         logOut.click();
+    }
+    //Click Constructor
+    public void clickConstructorLink(){
+        constructorLink.click();
     }
 
     public SelenideElement getButtonLogIn() {

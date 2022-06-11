@@ -20,6 +20,10 @@ public class MainPage {
     @FindBy(how= How.XPATH, using=".//button[text()='Оформить заказ']")
     private SelenideElement setAnOrderButton;
 
+    //Locator for h1 "Соберите бургер"
+    @FindBy(how= How.XPATH, using=".//h1[text()='Соберите бургер']")
+    private SelenideElement constructBurgerTitle;
+
     //Method for click LogIn link
     public void clickLogIn(){
         logInLink.click();
@@ -31,5 +35,9 @@ public class MainPage {
 
     public SelenideElement getSetAnOrderButton() {
         return setAnOrderButton;
+    }
+
+    public SelenideElement constructBurgerTitle() {
+        return constructBurgerTitle;
     }
 }
